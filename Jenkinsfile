@@ -19,7 +19,7 @@ node {
     }
   
     stage('deploy') {
-      def resourceGroup = 'enkins-get-started-rg'
+      def resourceGroup = 'jenkins-get-started-rg'
       def webAppName = 'Jenkins-tested'
       // login Azure
       withCredentials([usernamePassword(credentialsId: 'AzureServicePrincipal', passwordVariable: 'AZURE_CLIENT_SECRET', usernameVariable: 'AZURE_CLIENT_ID')]) {
